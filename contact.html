@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Доступная недвижимость</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="plugin-frameworks/bootstrap.css" rel="stylesheet">
+	
+	<link href="fonts/ionicons.css" rel="stylesheet">
+	
+		
+	<link href="common/styles.css" rel="stylesheet">
+	
+	
+</head>
+<body>
+	
+	<header>
+		<div class="bottom-menu">
+			<div class="container">
+				
+				<a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+				
+				<ul class="main-menu" id="main-menu">
+					<li class="drop-down"><a href="index.html">Главная</a></li>
+					<li class="drop-down"><a href="blog.html">Статьи</a></li>
+					<li class="drop-down"><a href="contact.html">Контакты</a></li>
+					<li class="drop-down"><a href="terms.html">Условия и положения</a></li>
+					<li class="drop-down"><a href="policy.html">Политика конфиденциальности</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div><!-- container -->
+		</div><!-- bottom-menu -->
+	</header>
+
+
+	<section class="pt-0 pb-20 mt-30">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-8">
+					<div class="p-30 mb-30 card-view">
+						<h4 class="p-title"><b>Оставьте комментарий</b></h4>
+						<form action="thanks.html" method="post" class="">
+							<div class="form-group">
+								<input type="text" class="form-control" id="contact-name"
+									   placeholder="Имя">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="contact-lastname"
+									   placeholder="Фамилия">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="contact-email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="contact-phone"
+									   placeholder="Номер телефона">
+							</div>
+							<div class="form-group">
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="10"
+										  placeholder="Текст комментария"></textarea>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-md-1"><input type="checkbox" name="terms" value="check" required=""/></div>
+									<div class="col-md-10"><a href="policy.html" target="_blank">
+										Я прочитал и согласен с условиями пользовательского соглашения
+									</a></div>
+								</div>
+							</div>
+							<button type="submit" class="btn-fill-primary plr-20">Отправить</button>
+						</form>
+					</div><!-- card-view -->
+				</div><!-- col-sm-12 -->
+				<div class="col-md-12 col-lg-4">
+
+					<div class="p-30 mb-30 card-view">
+						<ul class="list-contact list-li-mb-20">
+							<li><i class="ion-ios-home"></i>080782, Омская область, город Дорохово, ул. Космонавтов, 49</li>
+							<li><a href="#"><i class="ion-ios-telephone"></i>+4451830993658</a></li>
+							<li><a href="#"><i class="ion-email"></i>info.contact@<span class="server-name"></span></a></li>
+						</ul>
+					</div><!-- card-view -->
+				</div><!-- col-sm-12 -->
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</section>
+
+
+	<footer class="bg-191 pos-relative color-ccc bg-primary">
+		<div class="bg-dark-primary ptb-15 text-left">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-sm-12">
+						<ul class="mtb-5 font-11 text-md-center text-right list-a-p-5">
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="blog.html">Статьи</a></li>
+							<li><a href="contact.html">Контакты</a></li>
+							<li><a href="terms.html">Условия и положения</a></li>
+							<li><a href="policy.html">Политика конфиденциальности</a></li>
+						</ul>
+					</div><!-- col-sm-3 -->
+				</div><!-- row -->
+				
+			</div><!-- container -->
+		</div><!-- container -->
+	</footer>
+	
+	<!-- SCIPTS -->
+	
+	<script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
+	
+	<script src="plugin-frameworks/tether.min.js"></script>
+	
+	<script src="plugin-frameworks/bootstrap.js"></script>
+	
+	<script src="common/scripts.js"></script>
+
+	<div class='cookie-banner'>
+		<p>
+			Сайт использует файлы cookie. Они позволяют узнавать вас и получать информацию о вашем пользовательском опыте.Продолжая просмотр сайта, я соглашаюсь с использованием файлов cookie владельцем сайта в соответствии с <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Политикой cookie</a>
+		</p>
+		<button class='close-cookie'>&times;</button>
+	</div>
+	<script>
+		window.onload = function () {
+			$('.close-cookie').click(function () {
+				$('.cookie-banner').fadeOut();
+			})
+		}
+	</script>
+	<script>
+		let elems = document.querySelectorAll('.server-name');
+		elems.forEach((elem) => {
+			elem.innerHTML = window.location.hostname
+		})
+	</script>
+	
+</body>
+</html>

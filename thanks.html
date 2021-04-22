@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Мой опыт</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="plugin-frameworks/bootstrap.css" rel="stylesheet">
+	
+	<link href="fonts/ionicons.css" rel="stylesheet">
+	
+		
+	<link href="common/styles.css" rel="stylesheet">
+	
+	
+</head>
+<body>
+	
+	<header>
+		<div class="bottom-menu">
+			<div class="container">
+				
+				<a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+				
+				<ul class="main-menu" id="main-menu">
+					<li class="drop-down"><a href="index.html">Главная</a></li>
+					<li class="drop-down"><a href="blog.html">Статьи</a></li>
+					<li class="drop-down"><a href="contact.html">Контакты</a></li>
+					<li class="drop-down"><a href="terms.html">Условия и положения</a></li>
+					<li class="drop-down"><a href="policy.html">Политика конфиденциальности</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div><!-- container -->
+		</div><!-- bottom-menu -->
+	</header>
+
+
+	<section class="">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-8 offset-md-2">
+
+					<div class="p-30 mb-30 card-view">
+						<h3 class="mt-30 mb-5"><b>Спасибо за вашу заявку!</b></h3>
+
+					</div>
+
+				</div>
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</section>
+	
+	<!-- SCIPTS -->
+	
+	<script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
+	
+	<script src="plugin-frameworks/tether.min.js"></script>
+	
+	<script src="plugin-frameworks/bootstrap.js"></script>
+	
+	<script src="common/scripts.js"></script>
+
+	<div class='cookie-banner'>
+		<p>
+			Сайт использует файлы cookie. Они позволяют узнавать вас и получать информацию о вашем пользовательском опыте.Продолжая просмотр сайта, я соглашаюсь с использованием файлов cookie владельцем сайта в соответствии с <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Политикой cookie</a>
+		</p>
+		<button class='close-cookie'>&times;</button>
+	</div>
+	<script>
+		window.onload = function () {
+			$('.close-cookie').click(function () {
+				$('.cookie-banner').fadeOut();
+			})
+		}
+	</script>
+	<script>
+		let elems = document.querySelectorAll('.server-name');
+		elems.forEach((elem) => {
+			elem.innerHTML = window.location.hostname
+		})
+	</script>
+	
+</body>
+</html>
